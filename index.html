@@ -13,15 +13,14 @@
            
             <nav>
                  <img src="logo1.png" alt="logo" class="logo" >
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
+<ul id="sidemenu">
+    <li><a href="#header" onclick="closemenu1()">Home</a></li>
+    <li><a href="#about" onclick="closemenu1()">About Me</a></li>
+    <li><a href="#services" onclick="closemenu1()">Services</a></li>
+    <li><a href="#portfolio" onclick="closemenu1()">Portfolio</a></li>
+    <li><a href="#contact" onclick="closemenu1()">Contact</a></li>
+    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+</ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
              <div class="header-text">
@@ -206,6 +205,15 @@ function closemenu(){
     sidemenu.style.right = "-200px";
 }
    
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+function openmenu() {
+    sidemenu.style.right = "0";
+}
+function closemenu1() {
+    sidemenu.style.right = "-200px";
+}
 </script>
 </body>
 </html>

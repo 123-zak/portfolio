@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div id="header">
+           
+            <nav>
+                 <img src="logo1.png" alt="logo" class="logo" >
+                <ul id="sidemenu">
+                    <li><a href="#header"><a href="index.html">Home</a></a></li>
+                    <li><a href="#about"><a href="about.html">About Me</a></a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+             
+  <!--about me section-->
+  <div id="about">
+<div class="container">
+    <div class="row">
+        <div class="about-col1">
+            <img src="gar.jpg" alt="user pic">
+        </div>
+        <div class="about-col2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+                I am a passionate web and app developer based in Kenya, dedicated to creating modern, responsive, and user-friendly digital experiences. With a strong foundation in HTML, CSS, and JavaScript, I enjoy turning ideas into reality through clean and efficient code. I am always eager to learn new technologies and take on challenging projects that help me grow as a developer.
+            </p>
+            <div class="tab-links">
+               <p class="tab-link1 active-link" onclick="opentab('skills', event)">Skills</p>
+             <p class="tab-link1" onclick="opentab('experiences', event)">Experiences</p>
+           <p class="tab-link1" onclick="opentab('education', event)">Education</p>
+            </div>
+            <div class="tab-contents active-contents " id="skills" >
+                <ul>
+                    <li><span>ui/uv</span><br>Desighning web interface</li>
+                    <li><span>Frontend Development</span><br>Building responsive and interactive websites <br> using HTML, CSS, and JavaScript</li>
+                    <li><span>App Development</span><br>Creating cross-platform mobile applications <br> with modern frameworks</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experiences">
+                <ul>
+                    <li><span>2023 - Present</span><br>Freelance Web Developer - Designed and developed websites<br> for local businesses and startups.</li>
+                    <li><span>2022 - 2023</span><br>Intern, Tech Solutions Ltd - Assisted in building and <br>maintaining web applications.</li>
+                    <li><span>2021 - 2022</span><br>Personal Projects - Created several <br> portfolio and e-commerce projects to enhance skills.</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2020 - 2023</span><br>Bachelor of Science in Software Engineer,<br> University of Kirinyaga</li>
+                    <li><span>2018 - 2019</span><br>Diploma in Web Development,<br> Computer pride of Technology</li>
+                    <li><span>2017</span><br>Certificate in Mobile App Development,<br> Online Course</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+  </div>
+ 
+  
+          <footer>
+  &copy; 2025 Zakaria Garat. All rights reserved.
+</footer>
+        </div>
+    </div>
+  </div>
+  <script>
+var tablinks = document.getElementsByClassName("tab-link1");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname, event) {
+  // Remove active classes from all tabs and contents
+  for (var i = 0; i < tablinks.length; i++) {
+    tablinks[i].classList.remove("active-link");
+  }
+  for (var i = 0; i < tabcontents.length; i++) {
+    tabcontents[i].classList.remove("active-contents");
+  }
+  // Add active classes to the clicked tab and corresponding content
+  event.currentTarget.classList.add("active-link");
+  document.getElementById(tabname).classList.add("active-contents");
+}
+</script>
+<script>
+   var sidemenu = document.getElementById("sidemenu");
+function openmenu(){
+    sidemenu.style.right = "0";
+}
+function closemenu(){
+    sidemenu.style.right = "-200px";
+}
+   
+</script>
+</body>
+</html>
