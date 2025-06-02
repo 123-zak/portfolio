@@ -22,6 +22,7 @@ body{
 }
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 .logo{
     width: 100px;
@@ -444,9 +445,12 @@ footer {
     }
       .container {
         padding: 0 8px !important;
+        width: 100%;
+        box-sizing: border-box;
     }
     footer {
         margin-left: 0 !important;
+
     }
     .header-text{
         font-size: 15px;
@@ -541,6 +545,7 @@ nav .fa-bars {
         letter-spacing: 1px;
         font-weight: 700;
         color: #00ffd0;
+        word-break: break-word;
     }
     .contact-left, .contact-right{
         flex-basis: 100%;
