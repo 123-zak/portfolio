@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div id="header">
+           
+            <nav>
+                 <img src="logo1.png" alt="logo" class="logo" >
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+             <div class="header-text">
+            <h1>Hi, I'm Zakaria <br>
+                 <span>Garat</span> from Kenya</h1>
+                 <p>Web developer</p>
+            <p>App devoloper</p>
+        </div>
+        </div>   
+    </div>
+  <!--about me section-->
+  <div id="about">
+<div class="container">
+    <div class="row">
+        <div class="about-col1">
+            <img src="gar.jpg" alt="user pic">
+        </div>
+        <div class="about-col2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+                I am a passionate web and app developer based in Kenya, dedicated to creating modern, responsive, and user-friendly digital experiences. With a strong foundation in HTML, CSS, and JavaScript, I enjoy turning ideas into reality through clean and efficient code. I am always eager to learn new technologies and take on challenging projects that help me grow as a developer.
+            </p>
+            <div class="tab-links">
+               <p class="tab-link1 active-link" onclick="opentab('skills', event)">Skills</p>
+             <p class="tab-link1" onclick="opentab('experiences', event)">Experiences</p>
+           <p class="tab-link1" onclick="opentab('education', event)">Education</p>
+            </div>
+            <div class="tab-contents active-contents " id="skills" >
+                <ul>
+                    <li><span>ui/uv</span><br>Desighning web interface</li>
+                    <li><span>Frontend Development</span><br>Building responsive and interactive websites <br> using HTML, CSS, and JavaScript</li>
+                    <li><span>App Development</span><br>Creating cross-platform mobile applications <br> with modern frameworks</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experiences">
+                <ul>
+                    <li><span>2023 - Present</span><br>Freelance Web Developer - Designed and developed websites<br> for local businesses and startups.</li>
+                    <li><span>2022 - 2023</span><br>Intern, Tech Solutions Ltd - Assisted in building and <br>maintaining web applications.</li>
+                    <li><span>2021 - 2022</span><br>Personal Projects - Created several <br> portfolio and e-commerce projects to enhance skills.</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2020 - 2023</span><br>Bachelor of Science in Software Engineer,<br> University of Kirinyaga</li>
+                    <li><span>2018 - 2019</span><br>Diploma in Web Development,<br> Computer pride of Technology</li>
+                    <li><span>2017</span><br>Certificate in Mobile App Development,<br> Online Course</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+  </div>
+  <!--services-->
+  <div id="services">
+  <div class="container">
+    <h1 class="sub-title1">My services list</h1>
+    <div class="services-list">
+<div>
+     <i class="fa-solid fa-code"></i>
+    <h2>UI/UX</h2>
+
+    <p>
+        I offer a range of professional web and app development services, including designing modern websites, building responsive user interfaces, and developing cross-platform mobile applications. My goal is to deliver high-quality digital solutions tailored to your needs.
+    </p><br>
+    <a href="#" class="learn">Learn more</a>
+</div>
+<div >
+    <i class="fa-solid fa-crop"></i>.
+    <h2>Web Design</h2>
+    <p>
+        Crafting visually appealing and user-friendly website designs that reflect your brand identity. I focus on creating layouts that are both modern and intuitive, ensuring a seamless user experience across all devices.
+    </p><br><br>
+     <a href="#" class="learn">Learn more</a>
+</div>
+<div >
+    <i class="fa-brands fa-app-store-ios"></i>
+    <h2>App Development</h2>
+    <p>
+        Developing robust and scalable mobile applications for Android and iOS platforms. I utilize the latest frameworks to deliver apps that are fast, secure, and tailored to your specific requirements.
+    </p><br><br>
+     <a href="#" class="learn">Learn more</a>
+</div>
+</div>
+  </div>
+  </div>
+  <!--portfolio-->
+  <div id="portfolio">
+    <div class="container">
+        <h1>my work</h1>
+        <div class="work-list">
+           
+            <div class="work">
+                 <img src="work-1.png" alt="">
+                  <div class="layer">
+                <h3>web development</h3>
+                <p>
+                    This project showcases a modern and responsive website built using HTML, CSS, and JavaScript. It features an intuitive user interface, optimized performance, and a clean design, demonstrating my skills in front-end web development and attention to detail.
+                </p>
+               <a href=""> <i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+           
+            <div class="work">
+                 <img src="work-2.png" alt="">
+                 <div class="layer">
+                <h3>App Development</h1>
+                <p>
+                    A cross-platform mobile application developed using modern frameworks. This app provides seamless user experience, robust performance, and demonstrates my expertise in mobile app development for both Android and iOS.
+                </p>
+               <a href=""> <i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            
+            <div class="work">
+                <img src="work-3.png" alt="">
+                 <div class="layer">
+                <h3>UI/UX Design</h3>
+                <p>
+                    A creative UI/UX design project focused on delivering intuitive navigation and engaging visuals. This work highlights my ability to design user-centered interfaces that enhance usability and accessibility.
+                </p>
+                <a href=""> <i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+                
+            </div>
+           
+        </div>
+         <a href="" class="btn">See more</a>
+    </div>
+  </div>
+  <!--contact me-->
+  <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1>Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>zakariagarat7798@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>0723877475</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form action="">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="123@gmail.com" required>
+                    <textarea name="Message" id="" placeholder="Your messege" ></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+          <footer>
+  &copy; 2025 Zakaria Garat. All rights reserved.
+</footer>
+        </div>
+    </div>
+  </div>
+  <script>
+var tablinks = document.getElementsByClassName("tab-link1");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname, event) {
+  // Remove active classes from all tabs and contents
+  for (var i = 0; i < tablinks.length; i++) {
+    tablinks[i].classList.remove("active-link");
+  }
+  for (var i = 0; i < tabcontents.length; i++) {
+    tabcontents[i].classList.remove("active-contents");
+  }
+  // Add active classes to the clicked tab and corresponding content
+  event.currentTarget.classList.add("active-link");
+  document.getElementById(tabname).classList.add("active-contents");
+}
+</script>
+<script>
+   var sidemenu = document.getElementById("sidemenu");
+function openmenu(){
+    sidemenu.style.right = "0";
+}
+function closemenu(){
+    sidemenu.style.right = "-200px";
+}
+   
+</script>
+</body>
+</html>
