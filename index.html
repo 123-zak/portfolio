@@ -166,9 +166,10 @@
                 </div>
             </div>
             <div class="contact-right">
-                <form action="">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="123@gmail.com" required>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                     <input type="hidden" name="access_key" value="c0e173ec-644c-4d10-b275-cd7810c5bad4">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="123@gmail.com" required>
                     <textarea name="Message" id="" placeholder="Your messege" ></textarea>
                     <button type="submit">Submit</button>
                 </form>
